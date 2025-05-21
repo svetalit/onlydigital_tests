@@ -8,6 +8,7 @@ test.describe('Home Page Tests', () => {
 
   test.beforeEach(async ({ page }) => {
     homePage = new HomePage(page);
+    await homePage.loadSite();
     footerNavigation = new FooterNavigation(page);
   });
   test('Footer is visible', async () => {
