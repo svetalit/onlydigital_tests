@@ -39,7 +39,9 @@ export default defineConfig({
     testIdAttribute: 'data-component',
     headless: true,
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure'
+    video: 'retain-on-failure',
+    /* Timeout configurations */
+    navigationTimeout: 40000, // 40 seconds for navigation
   },
 
   /* Configure projects for major browsers */
