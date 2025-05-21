@@ -1,0 +1,29 @@
+{
+  "name": "onlydigital_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write .",
+    "test-headless": "npx playwright test --reporter=line",
+    "test": "npx playwright test --headed",
+    "report": "npx ortoni-report show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10",
+    "ortoni-report": "^3.0.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "playwright": "^1.52.0",
+    "prettier": "^3.5.3",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
